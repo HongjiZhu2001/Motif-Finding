@@ -1,6 +1,6 @@
-#Run with python HTML_Report.py motif_matrix_file motif_length [optional]output_file_name(out.html if not specified)
-#i.e. python HTML_Report.py homerMotifs.motifs12.txt 12
-#with output file name: python HTML_Report.py homerMotifs.motifs8.txt 8 Oct4_len8
+#Run with python HTML_Report.py -f motif_matrix_file -l motif_length [optional]-o output_file_name(out.html if not specified)
+#i.e. python HTML_Report.py -f homerMotifs.motifs12.txt -l 12
+#with output file name: python HTML_Report.py -f homerMotifs.motifs8.txt -l 8 -o Oct4_len8
 
 
 import numpy as np
@@ -10,11 +10,11 @@ import base64
 import sys
 
 
-motifFile = sys.argv[1]
-motif_lenth = int(sys.argv[2])
+motifFile = sys.argv[2]
+motif_lenth = int(sys.argv[4])
 out_name = "no input"
 try:
-    out_name = sys.argv[3]
+    out_name = sys.argv[6]
 except:
     pass
 
