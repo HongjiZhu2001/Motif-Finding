@@ -1,6 +1,9 @@
 # Motif-Finding
+The goal for this project is to implement the findMotifsGenome.pl from Homer in python.
+The project seprates into two parts 
+<br/><br/>
 
-## Part1: Read peak.txt file and generate motif matrix
+## Part1: Read peak.txt & reference genome files and generate motif matrix
 not finished yet
 
 ## Part2: Use motif matrix to generate the html report
