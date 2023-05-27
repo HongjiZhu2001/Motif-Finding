@@ -4,7 +4,7 @@
 not finished yet
 
 ## Part2: Use motif matrix to generate the html report
-Usage: python HTML_Report.py -f motif_matrix_file -l motif_length [optional -o output_file_name(out.html if not specified)
+Usage: python HTML_Report.py -f motif_matrix_file -l motif_length [optional]-o output_file_name(out.html if not specified)
 ]
 e.g. python HTML_Report.py -f homerMotifs.motifs12.txt -l 12
 
