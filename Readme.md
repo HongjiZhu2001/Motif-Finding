@@ -4,7 +4,7 @@ The project seprates into two parts
 <br/><br/>
 
 ## Part1: Read peak.txt & reference genome files and generate motif matrix
-not finished yet
+not finish yet
 
 ## Part2: Use motif matrix to generate the html report
 Usage: python HTML_Report.py -f motif_matrix_file -l motif_length [optional]-o output_file_name(out.html if not specified)
