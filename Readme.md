@@ -4,11 +4,11 @@
 not finished yet
 
 ## Part2: Use motif matrix to generate the html report
-Usage: python HTML_Report.py motif_matrix_file motif_length [optional]output_file_name(out.html if not specified)
+Usage: python HTML_Report.py -f motif_matrix_file -l motif_length [optional]-o output_file_name(out.html if not specified)
 
-e.g. python HTML_Report.py homerMotifs.motifs12.txt 12
+e.g. python HTML_Report.py -f homerMotifs.motifs12.txt -l 12
 
-or with output file name: python HTML_Report.py homerMotifs.motifs8.txt 8 Oct4_len8
+or with output file name: python HTML_Report.py -f homerMotifs.motifs8.txt -l 8 -o Oct4_len8
 <br/><br/>
 
 Currently the repository contain homerMotifs.motifs12.txt, and homerMotifs.motifs8.txt, which are the motif matrix of Oct4 in length 12 and length 8. Oct4_len12.html and Oct4_len8.html are the example output of these two motif matrix file. Feel free to also try with other motif matrices of other TFs.
