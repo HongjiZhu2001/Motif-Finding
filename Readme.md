@@ -53,7 +53,7 @@ Output: a .html output containing the motif sequence found with the logo showing
 ### For running data in More_Data folder:
 Usage: 
 
-```python Known_Motif_Search_Modified.py ./More_Data/.peak.bed_file GRCm38.chr17.fa output_file```
+```python Known_Motif_Search_Modified.py ./More_Data/.peak.bed_file GRCm38.chr17.fa output_file [optional]custom_motif_library```
 
 ```python HTML_Report_Modified.py motif_matrix_file(from previous step) output_file```
        
