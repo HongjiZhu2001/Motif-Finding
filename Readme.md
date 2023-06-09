@@ -37,7 +37,7 @@ Output: a motif_matrix_file containing the motifs found in the peak regions.
 <br/><br/>
 
 ## Part2: Use motif matrix to generate the html report
-Usage: ```python HTML_Report.py [optional]output_file_name(out.html if not specified)```
+Usage: ```python HTML_Report.py motif_matrix_file [optional]output_file_name(out.html if not specified)```
 
 Example Usage:
 
@@ -47,5 +47,6 @@ Example Usage:
 
 ```python HTML_Report.py Klf4_known_motifs.txt Klf4_report```
 
+Output: a .html output containing the motif sequence found with the logo showing the probability of nucleotides. 
 <br/><br/>
 
