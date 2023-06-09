@@ -3,7 +3,7 @@ The goal for this project is to implement the known motif finding part of findMo
 
 More about the Homer motif analysis: http://homer.ucsd.edu/homer/motif/index.html
 
-The project seprates into two parts: Part1: Read peak.txt & reference genome files to generate motif matrix and Part2: Use motif matrix to generate the html report.
+The project seprates into two parts: Part1: Read peak file, reference genome files, and motif library to generate motif matrix and Part2: Use motif matrix to generate the html report.
 <br/><br/>
 
 
