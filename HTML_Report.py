@@ -75,7 +75,7 @@ for idx, motif in enumerate(motifs):
     seq_ppm = seqlogo.Ppm(seqlogo.pfm2ppm(seq_pfm))
 
     img_path = "seq_logo.png"
-    seqlogo.seqlogo(seq_ppm, ic_scale=True, format='svg', size='large', filename=img_path)
+    seqlogo.seqlogo(seq_ppm, ic_scale=True, format='png', size='large', filename=img_path)
 
     with open(img_path, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode("utf-8")
