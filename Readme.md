@@ -49,7 +49,7 @@ Output: a .html output containing the motif sequence found with the logo showing
 <br/><br/>
 
 ## References
-Data used for example usage:
+Data used for example usages:
 
 https://www.ncbi.nlm.nih.gov/pubmed/28111071
 
