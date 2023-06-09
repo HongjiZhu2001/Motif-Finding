@@ -12,7 +12,7 @@ The project seprates into two parts: Part1: Read peak.txt & reference genome fil
 
 If you encounter any errors with using seqlogo, you may also need to install Ghostscript: https://ghostscript.com/releases/gsdnld.html
 <br/><br/>
-## Part1: Read peak.txt & reference genome files to generate motif matrix
+## Part1: Read peak file, reference genome files, and motif library to generate motif matrix
 Usage: ```python Known_Motif_Search.py peak_file genome_file output_file [optional]custom_motif_library```
 
 Example Usage:
