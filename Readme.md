@@ -48,6 +48,15 @@ Example Usage:
 Output: a .html output containing the motif sequence found with the logo showing the probability of nucleotides. 
 <br/><br/>
 
+### For running data in More_Data folder:
+Usage: 
+```python Known_Motif_Search_Modified.py ./More_Data/.peak.bed_file GRCm38.chr17.fa output_file```
+```python HTML_Report_Modified.py motif_matrix_file(from previous step) output_file```
+       
+Example Usage: 
+```python Known_Motif_Search_Modified.py ./More_Data/ESC_Esrrb.peaks.bed GRCm38.chr17.fa Esrrb_known_motifs.txt```
+```python HTML_Report_Modified.py Esrrb_known_motifs.txt Esrrb_report```
+<br/><br/>
 ## References
 Data used for example usages:
 
