@@ -7,6 +7,8 @@ The project seprates into two parts
 ## Set up
 ``` pip install -r requirement.txt```
 
+If you encounter any errors with seqlogo, you may also need to install Ghostscript: https://ghostscript.com/releases/gsdnld.html
+
 ## Part1: Read peak.txt & reference genome files to generate motif matrix
 
 
