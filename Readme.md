@@ -5,7 +5,7 @@ The project seprates into two parts
 
 
 ## Set up
-'''pip install -r requirement.txt'''
+``` pip install -r requirement.txt```
 
 ## Part1: Read peak.txt & reference genome files to generate motif matrix
 
