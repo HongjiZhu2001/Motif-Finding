@@ -8,6 +8,8 @@ The project seprates into two parts: Part1: Read peak.txt & reference genome fil
 
 
 ## Set up
+```git clone https://github.com/HongjiZhu2001/Motif-Finding```
+
 ``` pip install -r requirements.txt```
 
 If you encounter any errors with using seqlogo, you may also need to install Ghostscript: https://ghostscript.com/releases/gsdnld.html
