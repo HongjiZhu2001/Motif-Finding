@@ -1,19 +1,23 @@
 # Motif-Finding
-The goal for this project is to implement the findMotifsGenome.pl from Homer in python.
+The goal for this project is to implement the known motif finding part of findMotifsGenome.pl from Homer in python.
 The project seprates into two parts 
 <br/><br/>
 
 
 ## Set up
-``` pip install -r requirement.txt```
+``` pip install -r requirements.txt```
 
 If you encounter any errors with seqlogo, you may also need to install Ghostscript: https://ghostscript.com/releases/gsdnld.html
 
-## Part1: Read peak.txt & reference genome files to generate motif matrix
+<br/><br/>
 
+## Part1: Read peak.txt & reference genome files to generate motif matrix
+Usage: ```python peak_file genome_file output_file [optional]custom_motif_library```
+
+<br/><br/>
 
 ## Part2: Use motif matrix to generate the html report
-Usage: python HTML_Report.py -f motif_matrix_file -l motif_length [optional]-o output_file_name(out.html if not specified)
+Usage: ```python HTML_Report.py -f motif_matrix_file -l motif_length [optional]-o output_file_name(out.html if not specified)```
 
 e.g. python HTML_Report.py -f homerMotifs.motifs12.txt -l 12
 
