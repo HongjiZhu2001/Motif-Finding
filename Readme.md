@@ -62,6 +62,13 @@ Example Usage:
 ```python HTML_Report_Modified.py Esrrb_known_motifs.txt Esrrb_report```
 <br/><br/>
 ## References
+Motif library:
+
+http://homer.ucsd.edu/homer/motif/motifDatabase.html
+
+http://homer.ucsd.edu/homer/custom.motifs 
+
+
 Data used for example usages:
 
 https://www.ncbi.nlm.nih.gov/pubmed/28111071
