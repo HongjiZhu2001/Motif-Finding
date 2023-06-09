@@ -48,3 +48,9 @@ Example Usage:
 Output: a .html output containing the motif sequence found with the logo showing the probability of nucleotides. 
 <br/><br/>
 
+## References
+Data used for example usage:
+
+https://www.ncbi.nlm.nih.gov/pubmed/28111071
+
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90895 
