@@ -1,6 +1,9 @@
 # Motif-Finding
 The goal for this project is to implement the known motif finding part of findMotifsGenome.pl from Homer in python.
-The project seprates into two parts 
+
+More about the Homer motif analysis: http://homer.ucsd.edu/homer/motif/index.html
+
+The project seprates into two parts: Part1: Read peak.txt & reference genome files to generate motif matrix and Part2: Use motif matrix to generate the html report.
 <br/><br/>
 
 
@@ -12,19 +15,37 @@ If you encounter any errors with seqlogo, you may also need to install Ghostscri
 <br/><br/>
 
 ## Part1: Read peak.txt & reference genome files to generate motif matrix
-Usage: ```python peak_file genome_file output_file [optional]custom_motif_library```
+Usage: ```python Known_Motif_Search.py peak_file genome_file output_file [optional]custom_motif_library```
 
+Example Usage:
+
+```python Known_Motif_Search.py peaks_Oct4.txt GRCm38.chr17.fa Oct4_known_motifs.txt```
+
+```python Known_Motif_Search.py peaks_Sox2.txt GRCm38.chr17.fa Sox2_known_motifs.txt```
+
+```python Known_Motif_Search.py peaks_Klf4.txt GRCm38.chr17.fa Klf4_known_motifs.txt Homer_motifs.txt```
+
+This repository contains the Homer motif library Homer_motifs.txt, from http://homer.ucsd.edu/homer/custom.motifs.
+
+This repository also contains some example peak files of transcription factors: Oct4, Sox2, and Klf4: peaks_Oct4.txt, peaks_Sox2.txt, peaks_Klf4.txt
+
+If no custom_motif_library is specified, the tool will use Homer_motifs.txt by default.
+
+If you plan to use a custom_motif_library, please make sure it's in the same format as Homer_motifs.txt
+
+Output: a motif_matrix_file containing the motifs found in the peak regions.
 <br/><br/>
 
 ## Part2: Use motif matrix to generate the html report
-Usage: ```python HTML_Report.py -f motif_matrix_file -l motif_length [optional]-o output_file_name(out.html if not specified)```
+Usage: ```python HTML_Report.py [optional]output_file_name(out.html if not specified)```
 
-e.g. python HTML_Report.py -f homerMotifs.motifs12.txt -l 12
+Example Usage:
 
-or with output file name: python HTML_Report.py -f homerMotifs.motifs8.txt -l 8 -o Oct4_len8
+```python HTML_Report.py Oct4_known_motifs.txt Oct4_report```
+
+```python HTML_Report.py Sox2_known_motifs.txt Sox2_report```
+
+```python HTML_Report.py Klf4_known_motifs.txt Klf4_report```
+
 <br/><br/>
 
-Currently the repository contains homerMotifs.motifs12.txt, and homerMotifs.motifs8.txt, which are the motif matrix of Oct4 in length 12 and length 8. Oct4_len12.html and Oct4_len8.html are the example output of these two motif matrix file. Feel free to also try with other motif matrices of other TFs.
-<br/><br/>
-
-Future work for this part: Currenly the motif patterns matches the Homer output, which means that the HTML_Report.py worked successfully, but the Homer output does not present all the motifs in the motif matrix file. Next step is to find what's the filtering requirements and also add more elements and information to the html output
