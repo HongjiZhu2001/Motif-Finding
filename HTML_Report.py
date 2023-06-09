@@ -11,6 +11,7 @@ import sys
 
 
 motifFile = sys.argv[1]
+#motif_lenth = int(sys.argv[4])
 out_name = "no input"
 try:
     out_name = sys.argv[2]
